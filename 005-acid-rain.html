@@ -1,0 +1,44 @@
+<style>
+  body {
+    background: #0B2429;
+    position: relative;
+  }
+
+  .yellow {
+    background: #F3AC3C;
+  }
+
+  .olive {
+    background: #998235;
+  }
+
+  .circle {
+    aspect-ratio: 1;
+    height: 120px;
+    border-radius: 50%;
+  }
+
+  .tear {
+    border-radius: 50% 0 50% 50%;
+  }
+
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  div:first-child {
+    transform: translate(-100%, 0%);
+    z-index: 1;
+  }
+
+  div:last-child {
+    transform: translate(0%, -100%);
+    z-index: -1;
+  }
+</style>
+<div class="circle tear yellow left"></div>
+<div class="circle tear olive center"></div>
+<div class="circle yellow right"></div>
