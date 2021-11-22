@@ -1,0 +1,47 @@
+<div class="center outer">
+  <div class="inner center"></div>
+</div>
+<style>
+  body {
+    background: #62374e;
+    margin: 0;
+    position: relative;
+  }
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .outer {
+    background: #fdc57b;
+    height: 200px;
+    width: 300px;
+  }
+
+  .inner {
+    background: #62374e;
+    height: 200px;
+    width: 200px;
+  }
+
+  .inner::before,
+  .inner::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    width: 50px;
+    background: #62374e;
+    height: 100px;
+  }
+
+  .inner::before {
+    left: -50px;
+  }
+
+  .inner::after {
+    right: -50px;
+  }
+</style>
