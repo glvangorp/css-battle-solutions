@@ -1,0 +1,55 @@
+<div class="tines">
+  <div class="tine dark"></div>
+  <div class="tine light"></div>
+  <div class="tine dark"></div>
+  <div class="tine light"></div>
+  <div class="tine dark"></div>
+  <div class="tine light"></div>
+  <div class="tine dark"></div>
+</div>
+<div class="circle dark"></div>
+<div class="handle tine dark"></div>
+<style>
+  body {
+    background: #6592CF;
+    position: relative;
+    padding-top: 42px;
+  }
+
+  .light {
+    background: #6592CF;
+  }
+
+  .dark {
+    background: #060F55;
+  }
+
+  .tines {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tine {
+    width: 20px;
+    height: 110px;
+    border-radius: 10px;
+  }
+
+  .circle {
+    width: 140px;
+    border-radius: 0 0 50% 50%;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40px);
+    z-index: -1;
+  }
+
+  .handle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+</style>
