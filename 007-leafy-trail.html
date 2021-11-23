@@ -1,0 +1,44 @@
+<style>
+  body {
+    background: #0B2429;
+    position: relative;
+  }
+
+  .blue {
+    background: #1A4341;
+  }
+
+  .yellow {
+    background: #F3AC3C;
+  }
+
+  .olive {
+    background: #998235;
+  }
+
+  .leaf {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px 0;
+  }
+
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  div:first-child {
+    transform: translate(-125px, -50%);
+    z-index: -1;
+  }
+
+  div:last-child {
+    transform: translate(-25px, -50%);
+    z-index: 1;
+  }
+</style>
+<div class="leaf blue left"></div>
+<div class="leaf olive center"></div>
+<div class="leaf yellow right"></div>
