@@ -1,0 +1,43 @@
+<div class="eye center"></div>
+<div class="halfcircle top center"></div>
+<div class="halfcircle bottom center"></div>
+<style>
+  body {
+    background: #191210;
+  }
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .eye {
+    position: absolute;
+    height: 50px;
+    aspect-ratio: 1;
+    background: #84271C;
+    border-radius: 50%;
+    box-shadow: 0 0 0 25px #191210, 0 0 0 45px #ECA03D;
+    z-index: 1;
+  }
+
+  .halfcircle {
+    height: 60px;
+    aspect-ratio: 1;
+    background: #191210;
+    border-radius: 50%;
+    border: 20px solid #ECA03D;
+    border-bottom-color: #191210;
+    border-right-color: #191210;
+  }
+
+  .top {
+    transform: translate(-150%, -50%) rotate(225deg);
+  }
+
+  .bottom {
+    transform: translate(50%, -50%) rotate(45deg);
+  }
+</style>
