@@ -1,0 +1,51 @@
+<div class="arc left"></div>
+<div class="arc center"></div>
+<div class="arc right"></div>
+<div class="endcap left"></div>
+<div class="endcap right"></div>
+
+<style>
+  body {
+    background: #F5D6B4;
+  }
+
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .arc {
+    box-sizing: border-box;
+    width: 100px;
+    height: 50px;
+    border: 20px solid #D86F45;
+    border-radius: 100px 100px 0 0;
+    border-bottom: 0;
+    transform: translate(-50%, -100%);
+  }
+
+  .arc.left {
+    transform: translate(-130%, 0px) rotate(180deg);
+  }
+
+  .arc.right {
+    transform: translate(30%, 0px) rotate(180deg);
+  }
+
+  .endcap {
+    aspect-ratio: 1;
+    height: 20px;
+    background: #D86F45;
+    border-radius: 50%;
+  }
+
+  .endcap.left {
+    transform: translate(-650%, -10px);
+  }
+
+  .endcap.right {
+    transform: translate(550%, -10px);
+  }
+</style>
